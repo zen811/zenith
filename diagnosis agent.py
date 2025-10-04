@@ -1,3 +1,5 @@
+from data_analysis_agent import Engine_Condition_checker as ecc
+import pandas as pd
 rpm = input('Engine rpm')
 oil_p = input('Lub oil pressure')
 fuel_p = input('Fuel pressure')
@@ -5,13 +7,21 @@ coolant_p = input('Coolant pressure')
 oil_t = input('lub oil temp')
 coolant_t = input('Coolant temp')
 
-#compare to  the actual ai model data
 
+User_data={'Engine rpm': [rpm],
+                'Lub oil pressure': [oil_p],
+    'Fuel pressure': [fuel_p],
+    'Coolant pressure': [coolant_p],
+    'lub oil temp': [oil_t],
+    'Coolant temp': [coolant_t]}
+User_df=pd.DataFrame(User_data)
+#compare to  the actual ai model data
+Engine_Condition=ecc(User_df)
 #recommend visitation to the service centre 
 #Engine_condition=function()
-if Engine_condition==0:
+if Engine_Condition==0:
     print("very good engine")
-if Engine_condition==1:
+if Engine_Condition==1:
     print("The engine is overheating check coolant level or visit the nearest service centre")
     #function to book a servcie
 if Engine_Condition==2:
@@ -23,5 +33,5 @@ if Engine_Condition==3:
 if Engine_Condition==4:
     print("Your Engine is Exhibiting Poor performance please visit the nearest service centre")
     #function to book a service
-    
+
     

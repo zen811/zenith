@@ -41,3 +41,14 @@ test_accuracy= accuracy_score(Y_val,Y_pred)
 print(f"Test Accuracy: {test_accuracy:.4f}")
 print("\n Classification Report: \n", classification_report(Y_val,Y_pred))
 print("Confusion Matrix: ", confusion_matrix(Y_val,Y_pred))
+
+
+
+
+
+
+
+
+def Engine_Condition_checker(list1):
+    F_prediction=xgb_classifier.predict(list1)
+    return F_prediction
