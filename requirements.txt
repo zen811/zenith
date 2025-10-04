@@ -5,3 +5,9 @@
 {sklearn
         pip install scikit-learn
 }
+{pandas
+        pip install pandas
+}
+{matplotlib
+        pip install matplotlib
+}
