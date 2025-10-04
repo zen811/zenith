@@ -2,3 +2,6 @@
 {pytorch
         pip install torch --index-url https://download.pytorch.org/whl/cpu
 }paste in terminal
+{sklearn
+        pip install scikit-learn
+}
