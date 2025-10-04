@@ -17,6 +17,7 @@ import numpy as np
 
 from main import data
 
+
 x,y=data.loc[ : ,(data.columns!= 'Engine Condition')],data['Engine Condition']
 X_train, X_test, Y_train,Y_test=train_test_split(x,y,test_size=0.2,random_state=69)
 X_train,X_val,Y_train,Y_val=train_test_split(X_train,Y_train,test_size=0.5,random_state=69)
@@ -44,11 +45,6 @@ print("Confusion Matrix: ", confusion_matrix(Y_val,Y_pred))
 
 
 
-
-
-
-
-
-def Engine_Condition_checker(list1):
-    F_prediction=xgb_classifier.predict(list1)
-    return F_prediction
+def Engine_Condition_Checker(db1):
+    F_E_Condition=xgb_classifier.predict(db1)
+    return F_E_Condition[0]
