@@ -1,8 +1,4 @@
-langchain 
-wikipedia 
-langchain-community 
-langchain-openai
-langchain-anthropic
-python-dotenv
-pydantic
-duckduckgo-search
+
+{pytorch
+        pip install torch --index-url https://download.pytorch.org/whl/cpu
+}paste in terminal
