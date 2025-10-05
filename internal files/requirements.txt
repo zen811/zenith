@@ -5,9 +5,21 @@
 {sklearn
         pip install scikit-learn
 }
+{numpy
+        pip install numpy
+}
 {pandas
         pip install pandas
 }
 {matplotlib
         pip install matplotlib
+}
+{torch
+        pip install torch
+}
+{seaborn
+        pip install seaborn
+}
+{xgboost
+        pip install xgboost
 }
