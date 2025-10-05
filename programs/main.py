@@ -11,6 +11,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
+data = pd.read_csv(".\engine_data.csv")
+print(data)
 
 '''0 1 2 3 4    
 0= good
