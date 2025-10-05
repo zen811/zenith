@@ -15,9 +15,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-from programs.main import data
+data = pd.read_csv('.\engine_data.csv')
 
-
+input("text1")
 x,y=data.loc[ : ,(data.columns!= 'Engine Condition')],data['Engine Condition']
 X_train, X_test, Y_train,Y_test=train_test_split(x,y,test_size=0.2,random_state=69)
 X_train,X_val,Y_train,Y_val=train_test_split(X_train,Y_train,test_size=0.5,random_state=69)
