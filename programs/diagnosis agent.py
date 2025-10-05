@@ -1,11 +1,11 @@
 from data_analysis_agent import Engine_Condition_Checker as ecc
 import pandas as pd
-rpm = int(input('Engine rpm'))
-oil_p = int(input('Lub oil pressure'))
-fuel_p = int(input('Fuel pressure'))
-coolant_p = int(input('Coolant pressure'))
-oil_t = int(input('lub oil temp'))
-coolant_t = int(input('Coolant temp'))
+rpm = float(input('Engine rpm'))
+oil_p = float(input('Lub oil pressure'))
+fuel_p = float(input('Fuel pressure'))
+coolant_p = float(input('Coolant pressure'))
+oil_t = float(input('lub oil temp'))
+coolant_t = float(input('Coolant temp'))
 
 
 User_data={'Engine rpm': [rpm],
